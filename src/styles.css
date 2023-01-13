@@ -18,7 +18,7 @@ body {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
 }
 
 .grid-2-columns {
@@ -33,9 +33,18 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
 .card {
   background: white;
   margin: 30px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
 }
 
 .card-body {
@@ -157,6 +166,7 @@ main h4 {
   font-size: 24px;
   line-height: 1.5px;
   white-space: nowrap;
+  margin-top: 0;
 }
 
 main h5 {
@@ -168,8 +178,7 @@ main h5 {
 
 .cafes {
   width: 185px;
-  height: 185px;
-  max-width: 100%;
+  height: 173px;
 }
 
 footer {
@@ -231,5 +240,11 @@ footer a {
   }
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
